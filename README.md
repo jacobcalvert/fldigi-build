@@ -1,5 +1,5 @@
 # FLDigi (and others) Builder
-This is a dockerfile/image to build the fldigi, flmsg and flrig apps for Linux. Prebuilt at https://hub.docker.com/repository/docker/jacobcalvert/direwolf-build 
+This is a dockerfile/image to build the fldigi, flmsg and flrig apps for Linux. Prebuilt at https://hub.docker.com/repository/docker/jacobcalvert/fldigi-build 
 
 # Usage 
 To use the image, pull and run it. Your current working directory will have three folders when the build is finished, and the respective binaries will be in their default locations down in the */src/ directores. 
