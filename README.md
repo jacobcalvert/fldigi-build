@@ -9,7 +9,7 @@ You'll probably want to chown the resultant files since they will be owned by ro
 
 ## Command
 ```
-jacob@jacob-aspire:/tmp/fldigi$ docker run --rm -v $PWD:/opt/source fldigi-builder:latest 
+jacob@jacob-aspire:/tmp/fldigi$ docker run --rm -v $PWD:/opt/source jacobcalvert/fldigi-builder:latest 
 Building fldigi-4.1.18
 --2021-05-26 12:39:39--  http://www.w1hkj.com/files//fldigi/fldigi-4.1.18.tar.gz
 Resolving www.w1hkj.com (www.w1hkj.com)... 143.95.246.118
