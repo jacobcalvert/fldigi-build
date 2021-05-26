@@ -2,14 +2,17 @@
 This is a dockerfile/image to build the fldigi, flmsg and flrig apps for Linux. Prebuilt at https://hub.docker.com/repository/docker/jacobcalvert/fldigi-build 
 
 # Usage 
-To use the image, pull and run it. Your current working directory will have three folders when the build is finished, and the respective binaries will be in their default locations down in the */src/ directores. 
+To use the image, pull and run it. Your current working directory will have three folders when the build is finished, and the respective binaries will be in their default locations down in the */src/ directories.
+
+# How's it work?
+W1HKJ has fantastically used a standardized format for his release on his website. This dockerfile and script pulls the readme down, grabs the version number, pulls down the appropriate archive, unarchives it, configures, and builds it. The script is pretty self-explanatory, give it a look.  
 
 ## Note
 You'll probably want to chown the resultant files since they will be owned by root. 
 
 ## Command
 ```
-jacob@jacob-aspire:/tmp/fldigi$ docker run --rm -v $PWD:/opt/source jacobcalvert/fldigi-builder:latest 
+jacob@jacob-aspire:/tmp/fldigi$ docker run --rm -v $PWD:/opt/source jacobcalvert/fldigi-build:latest 
 Building fldigi-4.1.18
 --2021-05-26 12:39:39--  http://www.w1hkj.com/files//fldigi/fldigi-4.1.18.tar.gz
 Resolving www.w1hkj.com (www.w1hkj.com)... 143.95.246.118
